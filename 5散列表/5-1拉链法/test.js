@@ -1,0 +1,13 @@
+import {HashTable} from "./HashTable.js";
+var oneHash = new HashTable(11);
+oneHash.put(1, 'a');
+oneHash.put(12, 'b');
+oneHash.put('德玛', 'c');
+console.log(oneHash.get(1));
+console.log(oneHash.get(12));
+console.log(oneHash.get(23));
+console.log(oneHash.get('德玛'));
+console.log(oneHash.remove(1));
+console.log(oneHash.remove(23));
+console.log(oneHash.remove(12));
+console.log(oneHash.get(1));
